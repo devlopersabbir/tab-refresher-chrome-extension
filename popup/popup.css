@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 400px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem 0.2rem;
+}
+.container .topbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .topbar img {
+  width: 4rem;
+  border: 2px solid #f1c40f;
+  padding: 0.2rem;
+  border-radius: 100%;
+  background-color: #fef9e7;
+  margin-bottom: 0.5rem;
+}
+.container .topbar h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #17202a;
+}
+.container .topbar .version {
+  font-size: 0.7rem;
+  font-weight: 200;
+}
+.container .mainBody {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.7rem;
+}
+.container .mainBody .input {
+  display: flex;
+  flex-direction: row;
+}
+.container .mainBody .input .url {
+  border: 2px solid #f8f9f9;
+  border-radius: 0.1rem;
+  background: transparent;
+  outline: none;
+  padding: 0.2rem 0.4rem;
+  margin: 0.7rem 0rem;
+  width: 80%;
+}
+.container .mainBody .input .num {
+  border: 2px solid #f8f9f9;
+  border-radius: 0.1rem;
+  background: transparent;
+  outline: none;
+  padding: 0.2rem 0.4rem;
+  margin: 0.7rem 0rem;
+  width: 20%;
+  text-align: center;
+}
+.container .mainBody .box {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+.container .mainBody .box .start {
+  background-color: #d5f5e3;
+  color: #17202a;
+  border: none;
+  border-radius: 0.2rem;
+  outline: none;
+  padding: 0.3rem 0.7rem;
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease all 0.3s;
+}
+.container .mainBody .box .start:hover {
+  background-color: #239b56;
+  color: #fff;
+}
+.container .mainBody .box .stop {
+  background-color: #943126;
+  color: #fff;
+  border: none;
+  border-radius: 0.2rem;
+  outline: none;
+  padding: 0.3rem 0.7rem;
+  font-size: medium;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease all 0.3s;
+}
+.container .mainBody .box .stop:hover {
+  background-color: #fdedec;
+  color: #17202a;
+}/*# sourceMappingURL=popup.css.map */

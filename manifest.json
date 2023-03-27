@@ -1,0 +1,33 @@
+{
+  "name": "Secure Fiverr Auto Refresher",
+  "description": "Auto-refresh and auto-reload pages after any number of seconds for Fiverr. It's fully secure",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "icons": {
+    "128": "/icon/icon.png",
+    "16": "/icon/icon.png",
+    "256": "/icon/icon.png",
+    "48": "/icon/icon.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "/icon/icon.png",
+      "24": "/icon/icon.png",
+      "32": "/icon/icon.png"
+    },
+    "default_title": "Fiverr auto-reloader",
+    "default_popup": "/popup/popup.html"
+  },
+  "background": {
+    "service_worker": "/background/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["/content/content.js"]
+    }
+  ],
+  "permissions": ["storage", "tabs"],
+  "options_page": "/options/options.html"
+}
